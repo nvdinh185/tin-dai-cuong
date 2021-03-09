@@ -1,5 +1,4 @@
 # include<stdio.h>
-# include<math.h>
 
 int main() 
 {
@@ -19,7 +18,7 @@ int main()
 	scanf ("%f%f%f",&a,&b,&c);
 	if (a<b+c && b<a+c && c<a+b) 
 	{
-		printf ("la ba canh 1 tam giac\n");
+		//printf ("la ba canh 1 tam giac\n");
 		if( a*a==b*b+c*c || b*b==a*a+c*c || c*c== a*a+b*b)
 		printf ("Day la tam giac vuong");
         else if(a==b&&b==c)
