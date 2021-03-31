@@ -19,5 +19,7 @@ int main()
   if (min>b) min = b;
   if (min>c) min = c;
   sotrunggian = a + b + c - max - min;
+  printf ("So lon nhat la %d\n", max);
+  printf ("So be nhat la %d\n", min);
   printf ("So trung gian la %d", sotrunggian);
 }
