@@ -41,10 +41,11 @@ int main (){
 			break;
 		}	
 		case 5: {
-			char a,b;
+			int a,b;
+			char mod = '%';
 			printf ("Nhap a,b: ");
 			scanf ("%d%d", &a, &b);
-			printf ("%d % %d = %d", a, b, a%b);
+			printf ("%d %c %d = %d", a, mod, b, a%b);
 			break;
 		}
 	}

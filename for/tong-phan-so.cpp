@@ -2,7 +2,7 @@
 
 main()
 {
-	int n = 10, i;
+	int n = 3, i;
 	float s = 0;
 	for(i=1; i<=n; i++){
 		s += 1.0/i;

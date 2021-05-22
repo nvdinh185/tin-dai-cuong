@@ -24,7 +24,7 @@ int main(){
 	//ab
     while(a<50)
     {
-		gotoxy(10,7);puts("    Dung yen !!!");
+		gotoxy(10,7);puts("    Huong oi !!!");
     	gotoxy(a,b);
     	puts("              ***       *** ");
 		a++;	
@@ -34,7 +34,7 @@ int main(){
      while(s<50)
     {
 	
-		gotoxy(10,8);puts("      Gio tay len ...");
+		gotoxy(10,8);puts("      Da khuya roi ...");
     	gotoxy(s,d);
     	puts("            *******   ******* ");
 		s++;	
@@ -43,7 +43,7 @@ int main(){
    //ef
        while(e<50)
     {
-		gotoxy(10,9);puts("   Cuop day...");
+		gotoxy(10,9);puts("   Hom nay em co met khong?...");
     	gotoxy(e,f);
     	puts("           ********* ********* ");
 		e++;	
@@ -53,7 +53,7 @@ int main(){
      while(g<50)
     {
 	
-		gotoxy(10,10);puts("        Nam len giuong...");
+		gotoxy(10,10);puts("        Den gio di ngu roi...");
     	gotoxy(g,v);
     	puts("           ******************* ");
 		g++;	
@@ -62,7 +62,7 @@ int main(){
    //ik
        while(i<50)
     {
-		gotoxy(10,11);puts("     Nham mat lai...");
+		gotoxy(10,11);puts("     Em di ngu di nhe...");
     	gotoxy(i,k);
     	puts("            ***************** ");
 		i++;	
@@ -72,7 +72,7 @@ int main(){
      while(l<50)
     {
 	
-		gotoxy(10,12);puts("     San sang chua...");
+		gotoxy(10,12);puts("     Mai roi hoc tiep...");
     	gotoxy(l,m);
     	puts("              *************");
 		l++;	

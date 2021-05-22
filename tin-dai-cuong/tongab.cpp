@@ -2,11 +2,11 @@
 
 int main()
 {
-	int a,b,s;
+	int a, b, sum;
 	printf("nhap a = ");
 	scanf("%d", &a);
 	printf("nhap b = ");
 	scanf("%d", &b);
-	s=a+b;
-	printf ("tong hai so : %d", s);
+	sum =  a + b;
+	printf ("tong hai so la : %d", sum);
 }
