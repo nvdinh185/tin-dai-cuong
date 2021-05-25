@@ -2,7 +2,7 @@
 
 int main()
 {
-	int i, n, t1 = 1, t2 = 1, nextTerm;
+	int n, t1 = 1, t2 = 1, nextTerm;
 	printf("Nhap n = ");
 	scanf("%d", &n);
 	printf("Day Fibonacci: ");

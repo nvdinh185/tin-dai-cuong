@@ -14,7 +14,7 @@ int main()
 			if (j%i==0) dem++; //dem = dem + 1
 			i++;
 	    }
-	    if(dem==0) printf ("%d ", j);
+	    if(dem==0) printf ("%5d", j);
 	    j++;
 	}
 }
