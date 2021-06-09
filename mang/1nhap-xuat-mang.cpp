@@ -15,6 +15,7 @@ void xuatMang(int a[], int n){
 		printf("%4d", a[i]);
 	}
 }
+
 main(){
 	int a[100];
 	int n;

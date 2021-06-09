@@ -24,38 +24,34 @@ int main()
    delta= b*b-4*a*c;
    if (delta<0) printf ("phuong trinh vo nghiem");
    else if (delta==0) {
-    t1=-b/(2*a);
-    if (t1<0) printf ("phuong trinh vo nghiem");
-    else 
-    {x1 = sqrt (t1);
-    x2 =-sqrt (t1);
-    printf ("%f,%f",x1,x2);
-    }
-    if (t2<0) printf ("phuong trinh vo nghiem");
-    else
-    {x1= sqrt(t1);
-    x2 = -sqrt(t2);
-     printf ("%.2f,%.2f",x1,x2);
-    }
-  }else {
-  	t1 =(-b+sqrt(delta))/2*a;
-  	t2 =(-b-sqrt(delta))/2*a;
-  	if (t1<0&&t2<0) printf ("phuong trinh vo nghiem");
-  	if (t1<0) 
-  	 x1=sqrt(t2);
-  	 x2=sqrt(t2);
-  	 printf ("%f,%f",x1,x2);}
-  	if (t2<0)
-  	 {x1=sqrt(t1);
-  	 x2= -sqrt(t1);
-  	 printf ("%f,%f",x1,x2);}
+	    t1=-b/(2*a);
+	    if (t1<0) printf ("phuong trinh vo nghiem");
+	    else 
+	    {
+			x1 = sqrt (t1);
+		    x2 =-sqrt (t1);
+		    printf ("%f,%f",x1,x2);
+	    }
+  	} else {
+	  	t1 =(-b+sqrt(delta))/2*a;
+	  	t2 =(-b-sqrt(delta))/2*a;
+	  	if (t1<0&&t2<0) printf ("phuong trinh vo nghiem");
+	  	if (t1<0) 
+	  	 x1=sqrt(t2);
+	  	 x2=sqrt(t2);
+	  	 printf ("%f,%f",x1,x2);
+		   }
+	  	if (t2<0)
+  	 {
+	   	x1=sqrt(t1);
+  	 	x2= -sqrt(t1);
+  	 	printf ("%f,%f",x1,x2);}
   	else
-  	{x1=sqrt (t1);
-  	x2=-sqrt (t1);
-  	x3=sqrt (t2);
-  	x4=-sqrt (t2);
-  	printf ("%f,%f,%f,%f",x1,x2,x3,x4);}
-
-  
-    
+  	{
+	  	x1=sqrt (t1);
+  		x2=-sqrt (t1);
+  		x3=sqrt (t2);
+  		x4=-sqrt (t2);
+  		printf ("%f,%f,%f,%f",x1,x2,x3,x4);
+	}    
 }
