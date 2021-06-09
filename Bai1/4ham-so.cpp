@@ -7,8 +7,8 @@ int main()
 	float x;
 	printf("Nhap x: ");
 	scanf("%f",&x);
-	tu = pow(x*x,1.0/3) + pow(x,5) + log(pow(x,4)+1);
-	mau = x*x + M_PI/4;
+	tu = pow(x,2/3) + pow(x,5) + log(pow(x,4)+1);
+	mau = pow(x, 2) + M_PI/4;
 	ketqua = tu/mau;
 	printf("Gia tri cua bieu thuc = %4.2f", ketqua);
 	getch();

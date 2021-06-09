@@ -7,12 +7,12 @@ int C(int k, int n){
 }
 
 int main(){
-	int n = 10;//n toi da la 9
+	int n = 9;//n toi da la 9
 	for (int i = 0; i < n; i++) {
         for (int j = n; j > i; j--)
-            printf("   ");
+            printf("  ");
         for (int j = 0; j <= i; j++) {
-            printf("%3d   ", C(j, i));
+            printf("%2d  ", C(j, i));
         }
         printf("\n");
     }

@@ -8,5 +8,5 @@ int C(int k, int n){
 
 int main(){
 	int n = 20, k = 6;
-	printf("%d", C(k, n));
+	printf("C(%d, %d) = %d", k,n, C(k, n));
 }
