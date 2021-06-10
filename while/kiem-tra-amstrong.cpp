@@ -7,12 +7,23 @@ int main()
 	printf("Nhap n = ");
 	scanf("%d", &n);
 	sogoc = n;
-	while(sogoc>0)
+	
+//	dem so chu so
+	int count = 0;
+    while (n > 0)
+    {
+        count++;
+		n /= 10;        
+    }
+    
+//	kiem tra so amrstrong
+	n = sogoc;
+	while(n > 0)
 	{
-		donvi = sogoc%10;
-		sum += pow(donvi, 3);
-		sogoc = sogoc/10;		
+		donvi = n%10;
+		sum += pow(donvi, count);
+		n = n/10;
 	}
-	if(sum==n) printf("%d la so Amstrong!", n);
-	else printf("%d khong la so Amstrong!", n);
+	if(sum==sogoc) printf("%d la so Amstrong!", sogoc);
+	else printf("%d khong la so Amstrong!", sogoc);
 }

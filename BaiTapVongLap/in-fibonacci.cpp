@@ -8,7 +8,7 @@ int main()
 	printf("Day Fibonacci: ");
 	while(t1<n)
 	{
-	   printf("%4d", t1);
+	   printf("%5d", t1);
 	   next = t1 + t2;
 	   t1 = t2;
 	   t2 = next;
