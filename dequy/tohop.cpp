@@ -7,6 +7,6 @@ int C(int k, int n){
 }
 
 int main(){
-	int n = 20, k = 6;
+	int n = 5, k = 2;
 	printf("%d", C(k, n));
 }
