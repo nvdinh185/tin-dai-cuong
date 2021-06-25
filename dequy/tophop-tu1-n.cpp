@@ -12,8 +12,10 @@ long long C(int k, int n){
 }
 
 int main(){
-	int m = 5, i;
-	for(i=0; i<=m; i++){
-		printf("%5d", C(i, m));
+	int n = 5, i;
+	printf("Nhap n = ");
+	scanf("%d", &n);
+	for(i=0; i<=n; i++){
+		printf("%5d", C(i, n));
 	}
 }
