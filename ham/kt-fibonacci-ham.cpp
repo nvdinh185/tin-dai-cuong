@@ -2,15 +2,15 @@
 
 int ktFibo(int n)
 {
-	int t1 = 1, t2 = 1, nextTerm;
+	int t1 = 1, t2 = 1, next;
 	while(t1<n)
 	{
-	   nextTerm = t1 + t2;
+	   next = t1 + t2;
 	   t1 = t2;
-	   t2 = nextTerm;
+	   t2 = next;
 	}
 	if(t1==n) return 1;
-	else return 0;
+	return 0;
 }
 int main()
 {
