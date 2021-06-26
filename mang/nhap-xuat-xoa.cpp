@@ -15,15 +15,29 @@ void xuatMang(int a[], int n){
 	}
 }
 
-void xoaPhanTu(int a[], int n, int x){
-	int i;
-	for(i=0; i<n; i++){
-		if(a[i]==x) break;
+void xoaPhanTuDauTienTimThay(int a[], int &n, int x){
+	for(int i=0; i<n; i++) {
+		if(a[i]==x){
+			for(int j=i; j<n-1; j++) a[j] = a[j+1];
+			n--;
+			break;
+		}
 	}
-	for(int j=i; i<n-1; i++){
-		a[j] = a[j+1];
+}
+
+void xoaTatCa(int a[], int &n, int x) {
+	for (int i=0; i<n; i++) {
+		do {
+			if (a[i]==x){
+				if(i==n-1) {
+					n--;
+					break;
+				}
+				for (int j=i; j<n-1; j++) a[j] = a[j+1];
+				n--;
+			}
+		} while (a[i]==x);
 	}
-	a[n-1] = 0;
 }
 
 main(){
@@ -32,10 +46,13 @@ main(){
 	scanf("%d", &n);
 	int a[n];
 	nhapMang(a, n);
+	printf("\n\nMang nhap vao la: ");
 	xuatMang(a, n);
 	int x;
 	printf("\n\nNhap phan tu muon xoa: ");
 	scanf("%d", &x);
-	xoaPhanTu(a, n, x);
+//	xoaPhanTuDauTienTimThay(a, n, x);
+	xoaTatCa(a, n, x);
+	printf("\n\nMang sau khi xoa: ");
 	xuatMang(a, n);
 }

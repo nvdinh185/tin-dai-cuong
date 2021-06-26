@@ -63,12 +63,19 @@ void hoanDoi(int &a, int &b){
 	b = temp;
 }
 
-void sapXep(int a[], int n){
-	for(int i=0; i<n; i++){
-		for(int j=i+1; j<n; j++){
-			if(a[i]>a[j]) hoanDoi(a[i], a[j]);
-		}
-	}
+void bubbleSort(int arr[], int n){
+    bool haveSwap = false;
+    for (int i = 0; i < n-1; i++){
+        haveSwap = false;
+        for (int j = 0; j < n-i-1; j++){
+            if (arr[j] > arr[j+1]){
+                hoanDoi(arr[j], arr[j+1]);
+            }
+        }
+        if(haveSwap == false){
+            break;
+        }
+    }
 }
 
 main(){
@@ -85,7 +92,7 @@ main(){
 	xuatArmstrong(a, n);
 	printf("\n\nTong cac so Armstrong trong mang la: %d", sumArmstrong(a, n));
 	// goi ham sap xep mang
-	sapXep(a, n);
+	bubbleSort(a, n);
 	printf("\n\nMang sau khi sap xep:");
 	xuatMang(a, n);
 }

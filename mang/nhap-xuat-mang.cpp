@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <conio.h>
 
 void nhapMang(int a[], int n){
 	int i;
@@ -17,11 +16,12 @@ void xuatMang(int a[], int n){
 }
 
 main(){
-	int a[100];
 	int n;
 	printf("Nhap n = ");
 	scanf("%d", &n);
+	int a[n];
 	nhapMang(a, n);
+//	int num = sizeof(a)/sizeof(a[0]);
+//    printf("%d", num);
 	xuatMang(a, n);
-	getch();
 }
