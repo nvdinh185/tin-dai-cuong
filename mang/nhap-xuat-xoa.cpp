@@ -29,7 +29,7 @@ void xoaTatCa(int a[], int &n, int x) {
 	for (int i=0; i<n; i++) {
 		do {
 			if (a[i]==x){
-				if(i==n-1) {
+				if(i==n-1){
 					n--;
 					break;
 				}
@@ -38,6 +38,19 @@ void xoaTatCa(int a[], int &n, int x) {
 			}
 		} while (a[i]==x);
 	}
+}
+
+int xoaMang(int a[], int &n, int x){	 
+    int i, j;
+    for(i=0; i<n; i++) {
+	    if(a[i] == x) {
+		    for(j=i; j<n-1; j++) {
+		        a[j] = a[j+1];
+		    }
+	        n--;
+	        i--;
+	    }
+ 	}
 }
 
 main(){
@@ -52,7 +65,7 @@ main(){
 	printf("\n\nNhap phan tu muon xoa: ");
 	scanf("%d", &x);
 //	xoaPhanTuDauTienTimThay(a, n, x);
-	xoaTatCa(a, n, x);
+	xoaMang(a, n, x);
 	printf("\n\nMang sau khi xoa: ");
 	xuatMang(a, n);
 }
