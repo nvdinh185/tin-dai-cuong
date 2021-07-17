@@ -1,10 +1,13 @@
-#include<iostream>
-
-using namespace std;
+#include <stdio.h>
+#include <math.h>
 
 int main()
 {
-	cout<<"hello world"<<endl;
-	cout<<"xin chào"<<endl;
-	return 0;
+	int x = 16;
+	
+	printf("%d\n", (int)sqrt(x)* (int)sqrt(x));
+	
+	//printf("%d", sqrt(x)* sqrt(x));
+	
+	if( ((int)sqrt(x) * (int)sqrt(x))== x ) printf("yes");
 }
