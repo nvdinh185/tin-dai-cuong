@@ -20,16 +20,7 @@ int tamGiacVuong(int a, int b, int c){
  	return 0;
 }
 
-
-int main(){
-	int a, b, c;
-	printf("nhap a = ");
-	scanf("%d", &a);
-	printf("nhap b = ");
-	scanf("%d", &b);
-	printf("nhap c = ");
-	scanf("%d", &c);
-
+void kiemTraTamGiac(int a, int b, int c){
 	if(laTamGiac(a, b, c)){
 
 		if(tamGiacDeu(a, b, c)) printf("Ba so vua nhap tao thanh tam giac deu!");
@@ -41,6 +32,18 @@ int main(){
 		else printf("Ba so vua nhap tao thanh tam giac thuong!");
 
 	} else printf("Ba so vua nhap khong tao thanh tam giac!");
+}
+
+
+int main(){
+	int a, b, c;
+	printf("nhap a = ");
+	scanf("%d", &a);
+	printf("nhap b = ");
+	scanf("%d", &b);
+	printf("nhap c = ");
+	scanf("%d", &c);
 	
+	kiemTraTamGiac(a, b, c);
 	
 }

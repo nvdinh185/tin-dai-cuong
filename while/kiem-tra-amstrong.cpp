@@ -4,8 +4,12 @@
 int main()
 {
 	int n, sogoc, donvi, sum=0;
-	printf("Nhap n = ");
-	scanf("%d", &n);
+	
+//	nhap n la so co nhieu hon 2 chu so
+	do{
+		printf("Nhap n co nhieu hon 2 chu so: ");
+		scanf("%d", &n);
+	}while(n<10);
 	sogoc = n;
 	
 //	dem so chu so
